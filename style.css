@@ -1,7 +1,13 @@
 * {
   font-family: Tahoma;
+  background-color: #1b384a;
+  font-color: white;
 }
 
-h1 {
-  color: blue;
+h1, h2 {
+  text-transform: uppercase;
+}
+
+img {
+  border-radius: 50%;
 }
