@@ -1,5 +1,5 @@
 * {
-  font-family: Tahoma;
+  font-family: Georgia;
   background-color: #15202b;
   color: white;
 }
@@ -8,6 +8,12 @@ h1, h2 {
   text-transform: uppercase;
 }
 
+p {
+  font-family: Helvetica;
+}
+
 img {
   border-radius: 50%;
+  width: 100px;
+  float: left;
 }
