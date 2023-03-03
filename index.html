@@ -1,28 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link href='./style.css' rel='stylesheet'>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha página github</title>
+    <title>Portifólio | Emmanuel Vieri</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src='./caraHD.jpg' alt='young man with long curly hair smiling'>
-    <br>
-    <h1>Welcome to my page!</h1>
-    <p>This is my first repository and some things about me.</p>
-    <h2>Who am I?</h2>
-    <p>My name is Emmanuel Vieri, i'm a Brazilian I.T. student, a technology and computing enthusiast and a lover of knowledge. I'm a junior front-end developer looking for job.</p>
-    <h2>Skills</h2>
-    <ul>
-        <li>Javascript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Pixel Art</li>
-        <li>React (learning)</li>
-    </ul>
-    <h2>Projects</h2>
-    <p>This is my first project! So wait and you'll see!</p>
+    <header>
+        <menu>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <div id="home">
+            <div onmouseover="showName()" onmouseout="hideName()" class="container-home">
+                <div class="text-home">
+                    <p class="small-presentation-text">Hi, i'm</p>
+                    <p class="big-presentation-text">
+                        e<span class="full-name"><span class ="hidden-name" id="hidden-name">mmanuel</span><span class="vieri">vieri</span></span>
+                    </p>
+                    <p class="small-presentation-text">Front-end Developer</p>
+                    <button>Linkedin</button>
+                </div>
+                <div class="image-home">
+                    <img src="images/me-face.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="container-about">
+                <div class="container-img-about">
+                    <img src="images/me-south-park.png" alt="">
+                </div>
+                <div class="container-text-about">
+                    <h1>About me</h1>
+                    <p>Hi there, I'm Emmanuel and I'm a front-end developer from Brazil. I've always been fascinated by technology and how it can be used to create amazing things, which is why I decided to pursue a career in web development.</p>
+
+                    <p>Currently, I have a strong foundation in HTML, CSS, and JavaScript and I'm constantly expanding my skills and knowledge in these areas. My passion for coding and design has led me to work on various personal projects and collaborate with others to create visually appealing and functional websites.</p>
+                        
+                    <p>In addition to coding, I enjoy keeping up with the latest web development trends and technologies. I find it exciting to experiment with new tools and techniques and see how they can be used to improve user experiences and solve real-world problems.</p>
+                        
+                    <p>Overall, my goal as a front-end developer is to create clean, responsive, and user-friendly websites that provide value to users. I'm always looking for new opportunities to learn, grow, and contribute to exciting projects in the tech industry.</p>
+                </div>
+            </div>
+        </div>
+        <div id="projects">
+            <h1>Projects</h1>
+            <div class="carousel-container">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+            </div>
+            <div class="carousel-buttons">
+                <button class="prev-button">Prev</button>
+                <button class="next-button">Next</button>
+            </div>
+        </div>
+        <div id="skills">
+            <h1>Skills</h1>
+            <div class="container-skills">
+                <div class="skill-box">
+                    <span class="title">HTML</span>
+        
+                    <div class="skill-bar">
+                        <span class="skill-per html">
+                            <span class="tooltip">90%</span>
+                        </span>
+                    </div>
+                </div>
+        
+                <div class="skill-box">
+                    <span class="title">CSS</span>
+        
+                    <div class="skill-bar">
+                        <span class="skill-per css">
+                            <span class="tooltip">70%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">JavaScript</span>
+        
+                    <div class="skill-bar">
+                        <span class="skill-per javascript">
+                            <span class="tooltip">40%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">Git</span>
+        
+                    <div class="skill-bar">
+                        <span class="skill-per git">
+                            <span class="tooltip">50%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">GitHub</span>
+        
+                    <div class="skill-bar">
+                        <span class="skill-per github">
+                            <span class="tooltip">70%</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Feito por <a href="https://github.com/evieri">Emmanuel Vieri</a></p>
+        <p>e-mail: emmanuel.vieri@gmail.com</p>
+        <img src="" alt="">
+        <img src="" alt="">
+    </footer>
+
+    <script>
+        function showName() {
+            var hiddenName = document.getElementById("hidden-name");
+            hiddenName.classList.add("show-name");
+        }
+
+        function hideName() {
+            var showedName = document.getElementById("hidden-name");
+            showedName.classList.remove("show-name");
+        }
+    </script>
 </body>
 </html>
