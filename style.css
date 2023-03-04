@@ -205,16 +205,19 @@ main #skills h1 {
     padding: 10px 20px;
     border-radius: 7px;
 }
+
 .container-skills .skill-box{
     width: 100%;
     margin: 25px 0;
 }
+
 .skill-box .title{
     display: block;
     font-size: 14px;
     font-weight: 600;
     color: #333;
 }
+
 .skill-box .skill-bar{
     height: 8px;
     width: 100%;
@@ -222,6 +225,7 @@ main #skills h1 {
     margin-top: 6px;
     background: rgba(0,0,0,0.1);
 }
+
 .skill-bar .skill-per{
     position: relative;
     display: block;
@@ -232,18 +236,22 @@ main #skills h1 {
     animation: progress 0.4s ease-in-out forwards;
     opacity: 0;
 }
+
 .skill-per.css{
     width: 70%;
     animation-delay: 0.1s;
 }
+
 .skill-per.javascript{
     width: 40%;
     animation-delay: 0.2s;
 }
+
 .skill-per.git{
     width: 50%;
     animation-delay: 0.3s;
 }
+
 .skill-per.github{
     width: 70%;
     animation-delay: 0.4s;
@@ -257,6 +265,7 @@ main #skills h1 {
         opacity: 1;
     }
 }
+
 .skill-per .tooltip{
     position: absolute;
     right: -14px;
@@ -269,6 +278,7 @@ main #skills h1 {
     background: #159A9C;
     z-index: 1;
 }
+
 .tooltip::before{
     content: '';
     position: absolute;
