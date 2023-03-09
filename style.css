@@ -200,48 +200,63 @@ main div#projects {
 }
 
 .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    gap: 10vh;
+    width: 100%;
 }
 
-.visible-projects, .hidden-projects {
-    display: flex;
-    justify-content: space-around;
-    gap: 5vw;
+.projects-container h1 {
+    text-indent: 10%;
+    padding-bottom: 13px;
+    border-bottom: 5px solid #fff;
+    color: #fff;
+    font-size: 2.5em;
 }
 
-.hidden-projects {
-    display: none;
+.visible-projects {
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .project-image-container {
-    background-color: rgba(0, 0, 0, 0.25);
     text-align: center;
     transition: .3s;
+    position: relative;
+    height: 180px;
+    width: 350px;
 }
 
-.inside-image-container {
-    background-color: black;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.project-image-container p {
-    margin-bottom: 4%;
+.overlay p {
     font-weight: bold;
     color: #fff;
 }
 
 .project-image-container img {
-    height: 170px;
-    width: 350px;
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
 }
 
 .project-image-container:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+}
+
+.overlay:hover {
+    opacity: 0;
 }
 
 /* <-- Skills --> */
